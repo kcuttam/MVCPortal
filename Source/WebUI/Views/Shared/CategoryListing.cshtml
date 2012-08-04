@@ -1,0 +1,4 @@
+﻿@model WebStoreSln.Models.Category
+<h2>
+    Browse Categories</h2>
+<li><a href="/Browse/Products/@Model.Id">@Model.Name</a> &nbsp; @Html.ActionLink(Model.Name, "Browse", new { category = Model.Name })</li>

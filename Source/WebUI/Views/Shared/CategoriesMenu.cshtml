@@ -1,0 +1,9 @@
+﻿@model IEnumerable<WebStoreSln.Models.Category>
+<h3>
+    Browse Categories</h3>
+<ul>
+    @foreach (var category in Model)
+    {
+        <li><a href="/Browse/Products/@category.Id">@category.Name</a> @*&nbsp; @Html.ActionLink(category.Name, "Browse", new { category = category.Name })*@</li>
+    }
+</ul>

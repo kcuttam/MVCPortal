@@ -1,0 +1,19 @@
+﻿@using WebStoreSln.Models
+@using WebUI.Models
+@using WebUI.HtmlHelpers
+@model  ProductListViewModel
+@{
+    ViewBag.Title = "Products";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>
+    Products under category: @Model.CategoryName</h2>
+<ul>
+    @foreach (var product in Model.Products)
+    {
+        Html.RenderPartial("ProductListing", product);
+    }
+</ul>
+<div class="pager">
+    @Html.PageLinks(Model.PagingInfo, f => Url.Action("Products", new { page = f }))
+</div>

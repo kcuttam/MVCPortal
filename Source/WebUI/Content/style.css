@@ -1,0 +1,44 @@
+﻿.header
+{
+    width: 100%;
+    min-height: 50px;
+}
+
+.header .logo
+{
+    margin-right: auto;
+    margin-left: auto;
+    width:1000px;
+}
+
+.header h3
+{
+    font-size: 14px;
+    color: Blue;
+}
+
+.dvcontent
+{
+    margin-right: auto;
+    margin-left: auto;
+    width: 1000px;
+    border:#c6c6c6 1px solid;
+    min-height:300px;
+}
+.dvleftcontent
+{
+    width: 173px;
+    float: left;
+}
+.dvrightcontent
+{
+    width: 825px;
+    float: right;
+    border-left: #c4c4c4 2px solid;
+    min-height:300px;
+}
+
+.dvclear
+{
+    clear:both;
+}

@@ -1,0 +1,5 @@
+﻿@using WebStoreSln.Models
+@model  Product
+<li><a href="/Browse/ProductDetail/@Model.Id">
+    <img src="/content/images/products/@Model.ThumbUrl" alt="@Model.Name" height="100" />
+    @Model.Name</a> </li>
