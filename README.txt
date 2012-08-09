@@ -1,3 +1,3 @@
-ASP.NET MVC shopping cart
+ASP.NET MVC Shopping cart
 
 kcuttamkumar@gmail.com
